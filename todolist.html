@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TO DO LIST</title>
+    <style>
+    h1 {
+      margin-top: 0px;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+    }
+
+    input::placeholder {
+      text-align: center;
+      color: gray;
+    }
+    li {
+      display: table;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .delete_button {
+      margin-left: 20px;
+      padding: 2px;
+    }
+    #container {
+      display: grid;
+      grid-template-columns:1fr 3fr 1fr;
+      grid-template-rows: 3fr 1fr;
+    }
+    #grid_main {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    #grid_input {
+      text-align: center;
+    }
+    #submit_button {
+      color: black;
+    }
+    #list {
+      background-color: #f0f0f0;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 20px;
+      padding-bottom: 1px;
+    }
+    </style>
+  </head>
+  <body>
+    <h1><a href="todolist.html" style="color:lightblue; font-size:50px;">TO DO LIST</a></h1>
+    <div id="container">
+      <div id="grid_main">
+        <div id="grid_input">
+          <input type="text" id="input_goal" placeholder="WRITE YOUR GOAL :)" style="width:400px;height:30px;font-size:20px;" >
+          <button type="button" id="submit_button">GO!</button>
+        </div>
+        <ul id="list">
+          <li>THINK</li>
+          <li>AND</li>
+          <li>WRITE</li>
+          <li>SOMETHING</li>
+          <li>TO DO</li>
+        </ul>
+      </div>
+    </div>
+  </body><script src="./script.js"></script>
+</html>
